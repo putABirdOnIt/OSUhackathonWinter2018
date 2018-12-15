@@ -28,7 +28,7 @@ $(document).ready(function () {
 			else //year is good
 			{
 				yearValue = x; //assign to yearValue variable
-				sessionStorage.setItem('year', yearInput); //put into local storage
+				sessionStorage.setItem('year', yearValue); //put into local storage
 				window.location.href = 'genre.html'; //redirect to next page
 			}
     		}
