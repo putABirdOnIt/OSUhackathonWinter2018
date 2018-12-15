@@ -1,8 +1,16 @@
+$(document).ready(function () { 
 
-//Set yearInput varibale equal to id-selector = 'yearInput' from HTML file
-var yearInput = document.querySelector('#yearInput');
+    //grabbing user input from form upon submit button being hit
+    $('#getYear').submit(function (e){
+            	e.preventDefault(); //so we don't submit the form again
 
+	    	//Set yearInput variable equal to id-selector = 'yearInput' from HTML file
+		var yearInput = document.getElementById("getYear").elements[0].value; //we are accessing the first (and only) form
+		console.log(yearInput);
+    });
+});
 
+/*
 // Declare another variable so that we can hold the value of our
 // input field. Assign with `null` at first so we will know it's empty
 var yearValue = null;
@@ -30,3 +38,4 @@ function handleInput(event) {
 }
 
 yearInput.addEventListener('input', handleInput)
+*/
