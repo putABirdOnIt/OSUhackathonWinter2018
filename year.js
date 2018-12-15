@@ -28,12 +28,16 @@ $(document).ready(function () {
 			else //year is good
 			{
 				yearValue = x; //assign to yearValue variable
+				sessionStorage.setItem('year', yearInput); //put into local storage
+				window.location.href = 'genre.html'; //redirect to next page
 			}
     		}
 	    	else //input value has less than 3 digits 
 	    	{
 			window.alert('Input must have 4 digits or more');	
 	    	}
+
+	    
 	    
     });
 });
