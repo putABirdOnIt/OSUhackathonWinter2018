@@ -2,11 +2,12 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <!--Need CSS File-->
-  <link rel="stylesheet" href="year.css" />
+  <link rel="stylesheet" href="./css/year.css" />
   <!--relative path to JS file named index-->
   <script src="./index.js"></script>
 
@@ -16,14 +17,15 @@
 <body>
 
 	<div class="bg">	
- 		<div id="app">
-    			<div>
-      				<!--Just Started with year range 1980 to 2000 for now-->
-      				<span>Enter year between 1980 and 2000: </span>
+		<form id="getYear">
+			<center>	   
+				<!--Just Started with year range 1980 to 2000 for now-->
+				<span class="text">Enter year between 1980 and 2000: </span> </br>
+				<input type="number" name="year" id="yearInput">	
+				<input type="submit" name="Submit" id="submitBtn" class="btn btn-info" />
+			<center>
+		</form>
 
-      				<!--Created the number type 'yearInput'-->
-      				<input id="yearInput" type="number" />
-    			</div>
   		</div>
 	</div>
 

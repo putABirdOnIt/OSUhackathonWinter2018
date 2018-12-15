@@ -1,19 +1,40 @@
-body, html 
+body, html  
 	{
 	    height: 100%;
 	    margin: 0;
 	}
 
-.bg {
-  	/* The image used */
-    	background-image: url("background.jpg");
-    	/* Full height */
-    	height: 100%;
-    	/* Center and scale the image */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: block;
-        white-space: nowrap;
-        overflow: hidden;
-    }
+.bg 
+	{
+  		/* The image used */
+    		background-image: url("background.jpg");
+    		/* Full height */
+    		height: 100%;
+    		/* Center and scale the image */
+        	background-position: center;
+        	background-repeat: no-repeat;
+        	background-size: cover;
+        	display: block;
+        	white-space: nowrap;
+        	overflow: hidden;
+    	}
+
+#getYear    
+	{
+		    position: absolute;
+		    top: 50%;
+		    left: 30%; 
+	}
+
+.text
+	{
+		font-family: "Arial", Times, serif;
+		font-style: oblique;
+		font-size: 15px;
+		color: white;
+		font-weight: bold;
+		display: block;
+		white-space: nowrap;
+		overflow: hidden;
+		display: inline-block;
+	}
