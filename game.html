@@ -1,4 +1,4 @@
-<!-- 4.PokemonGym.html -->
+<!-- gamedatabase.html -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -34,7 +34,7 @@
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 </button>
-<a class="navbar-brand" href="main.html">Pokemon Website</a>
+<a class="navbar-brand" href="main.html">Classic Video Game Database</a>
 </div>
 <div id="navbar" class="navbar-collapse collapse">
 <ul class="nav navbar-nav">
@@ -79,7 +79,7 @@
 		<input type="text" name="Genre" id="Genre">
 	</label>
 	<br>
-	<label>Year Game Came Out:
+	<label>Release Year:
 		<input type="text" name="YearDebut" id="YearDebut">
 	</label>
 	<br>
@@ -91,8 +91,8 @@
 </form>
 <br>
 
-<h2>Update {{game.game_name}} {{gym.year_debut}} 
-{{gym.gym_type}} {{gym.gym_leader}}:</h2>
+<h2>Update {{game.game_name}} {{game.year_debut}} 
+{{game.console}} {{game.genre}}:</h2>
 <form id="update-game" action="/game" method="post">
     Game Name: <input type="text" name="game_name" value="{{game.game_name}}"><br>
     Console: <input type="text" name="console" value="{{game.console}}"><br>
@@ -108,7 +108,7 @@
 			<th>Game Name</th>
 			<th>Console</th>
 			<th>Genre</th>
-			<th>Year Game Came Out</th>
+			<th>Release Year</th>
 			
 									
 		</tr>
