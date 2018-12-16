@@ -1,47 +1,46 @@
-<html lang="en">
+﻿<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/console.css" />
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/console.css" />
+    <script src="./console.js"></script>
 
-  <!--Need CSS File-->
-  <link rel="stylesheet" href="./css/year.css" />
-  <!--relative path to JS file named index-->
-  <script src="./console.js"></script>
-
-  <title>Retro Game Generator</title>
+    <title>Retro Game Generator</title>
 </head>
 
 <body>
 
-	<div class="bg">	
-		<form id="getConsole">
-			<center>	   
-				<!--Wide open but will consist of NES/Atari/Sega Genesis for now-->
-				<span class="text">Enter the console platform: </span> </br>
-				<input type="text" name="console" id="consoleInput">	
-				<input type="submit" name="Submit" id="submitBtn" class="btn btn-info" />
-			<center>
-		</form>
+    <div class="container">
+        <center><img src="background.jpg" alt="arcade" style="width:40%" "height:40%" align="middle"></center>
+        <form id="getConsole">
+            <center>
+                <!--Wide open but will consist of NES/Atari/Sega Genesis for now-->
+                <span class="text">Enter the console platform: </span> </br>
+                <input type="text" name="console" id="consoleInput">
+                <input type="submit" name="Submit" id="submitBtn" class="btn btn-info" />
+                <input type="submit" name="Submit" id="submitBtn" class="btn btn-info" />
+            </center>
+        </form>
+    </div>
 
-  		</div>
-	</div>
-<!--Code for a searchbar functionality-->
-	
-<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#database">Database</a>
-  <a href="#contact">Contact</a>
-  <div class="search-container">
-    <form action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-  </div>
-</div>
+    <!--Code for a searchbar functionality-->
+
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#database">Database</a>
+        <a href="#contact">Contact</a>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
 </body>
 
 </html>

@@ -1,0 +1,57 @@
+body {
+    background-color: black;
+}
+
+.container {
+    position: center;
+}
+
+    .container img {
+        height: auto;
+        position: center;
+    }
+
+    .container .btn {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: #f44336;
+        color: white;
+        font-size: 16px;
+        padding: 16px 30px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+        .container .btn:hover {
+            background-color: #f44336;
+            color: white;
+        }
+        
+#getConsole {
+    position: absolute;
+    top: 45%;
+    left: 40%;
+}
+
+#submitBtn {
+    position: absolute;
+    top: 205%;
+    left: 52%;
+}
+
+.text {
+    font-family: "Arial", Times, serif;
+    font-style: oblique;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+}
