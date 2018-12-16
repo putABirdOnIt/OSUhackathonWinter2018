@@ -1,35 +1,25 @@
-<html lang="en">
-
+<!-- This is the year page. The button links to the "genre.html" page -->
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!--bootstrap-->
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <!--jquery header for element selector-->
-  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-  <!--Need CSS File-->
-  <link rel="stylesheet" href="./css/year.css" />
-  <!--relative path to JS file named index-->
-  <script src="./genre.js"></script>
-  <title>Retro Game Generator: get game genre</title>
+    <link rel="stylesheet" href="./css/genre.css" />
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="./genre.js"></script>
 </head>
-
 <body>
+    <div class="container">
+        <center><img src="background.jpg" alt="arcade" style="width:40%" "height:40%" align="middle"></center>
+        <form id="getGenre">
+            <center>
+                <!--Allows people to choose which genre of video game they would like to see-->
+                <span class="text">Choose a genre: </span> </br>
+                <input type="text" name="genre" id="consoleInput">
+                <input type="submit" name="Submit" id="submitBtn" class="btn btn-info" />
 
-	<div class="bg">	
-		<form id="getGenre">
-			<center>	   
-				<!--Allows people to choose which genre of video game they would like to see-->
-				<span class="text">Choose a genre: </span> </br>
-				<input name type="text" name="genre" id="consoleInput">	
-				<input type="submit" name="Submit" id="submitBtn" class="btn btn-info" />
-			<center>
-		</form>
-
-  		</div>
-	</div>
+                <input type="submit" name="Submit" id="submitBtn" class="btn btn-info" />
+            </center>
+        </form>
+    </div>
 
 </body>
-
 </html>
