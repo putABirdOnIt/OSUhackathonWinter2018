@@ -34,8 +34,6 @@ $(document).ready(function () {
         }
     }
     
-
-
     /* some testing
     console.log("length: " + results.length);
     for (var i = 0; i < 10; i++) {
@@ -50,14 +48,12 @@ $(document).ready(function () {
     }
     */
    
+    var result = results[Math.floor(Math.random() * (results.length - 1) + 1)]; //randomly pick a result from our array of queries that meet the user criteria
+    var imageString = '<img id="image" style="width:60px;height:70px" src="' + result.sample_cover.image + '"/>';
 
-
-    var result = results[Math.floor(Math.random() * (results.length - 1) + 1)];
-    console.log("title: " + result.title);
-    console.log("description: " + result.description);
 
     $('#gameTitleHere').text(result.title); //append text to a div
-
+    $('#gameImageHere').prepend(imageString); //append picture to a div
 
 
     });
