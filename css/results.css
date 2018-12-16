@@ -6,12 +6,12 @@ body {
     position: center;
 }
 
-    .container img {
+.container img {
         height: auto;
         position: center;
-    }
+}
 
-    .container .btn {
+.container .btn {
         position: absolute;
         top: 60%;
         left: 50%;
@@ -25,9 +25,41 @@ body {
         cursor: pointer;
         border-radius: 5px;
         text-align: center;
-    }
+}
 
-        .container .btn:hover {
-            background-color: darkviolet;
-            color: white;
-        }
+.container .btn:hover {
+         background-color: darkviolet;
+         color: white;
+}
+
+#gameTitle {
+    font-family: "Arial", Times, serif;
+    font-style: oblique;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    position: absolute;
+    top: 40%;
+    left: 38%;
+}
+
+
+#gameTitleHere {
+    font-family: "Arial", Times, serif;
+    font-style: oblique;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+}
+
