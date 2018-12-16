@@ -7,10 +7,8 @@ $(document).ready(function () {
     console.log("genre: " + genre);
     console.log("console: " + platform);
 
-    //API call
+    /********API call here**********/
     
- 
-
     //get platform id
     var req = new XMLHttpRequest();
     var queryString = 'https://api.mobygames.com/v1/games?platform=' + platform + '&genre=' + genre + '&api_key=FhVfEFsB6RGpjwCqLtrw1g==';
@@ -19,10 +17,7 @@ $(document).ready(function () {
     req.withCredentials = false;
     req.send(); //request json data
     var response = JSON.parse(req.responseText); //response variable holds all the API data returned
-    //console.log("length: " +response.games.length);
-    //console.log(response.games[0].platforms[0].first_release_date);
 
-    
     //look for the individual response with the year specified and store into array
     var results = [];
     var j = 0;
@@ -34,20 +29,6 @@ $(document).ready(function () {
         }
     }
     
-    /* some testing
-    console.log("length: " + results.length);
-    for (var i = 0; i < 10; i++) {
-        var num = Math.floor(Math.random() * (results.length-1)+1);
-        console.log(num + " ");
-    }    
-    console.log("results: ")
-    for (var i=0; i<results.length; i++)
-    {
-        console.log(results[i]);
-
-    }
-    */
-   
     var result = results[Math.floor(Math.random() * (results.length - 1) + 1)]; //randomly pick a result from our array of queries that meet the user criteria
     var imageString = '<img id="image" style="width:60px;height:70px" src="' + result.sample_cover.image + '"/>';
 
