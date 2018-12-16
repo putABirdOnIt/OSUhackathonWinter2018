@@ -1,0 +1,37 @@
+<h3>Add new Games</h3>
+
+<form id="addgame" action="/game" method="post">
+    Game Name: <input type="text" name="game_name"><br>
+    Console: <input type="text" name="console"><br>
+    Genre: <input type="text" name="genre"><br>
+    Release Year: <input type="text" name="year_debut"><br>
+    <input type="submit" value="Submit">
+    </form>
+
+
+<h1>List of Current Games:</h1>
+<!-- {{#each foo}}
+{{this}}
+{{/each}} -->
+<table>
+    <thead> 
+        <th>Game Name</th> 
+        <th>Console</th> 
+        <th>Genre</th>
+        <th>Release Year</th>  
+    </thead> 
+    <tbody> 
+        {{#each game}} 
+        <tr> 
+            <td>{{game_name}}</td> 
+            <td>{{console}}</td> 
+            <td>{{genre}}</td> 
+            <td>{{year_debut}}</td>
+            <td><button onclick="deleteGame{{game_id}})">Delete</button></td>
+           
+            <td><a href="/game/{{game_id}}">Update</a></td>
+        </tr> 
+        {{/each}} 
+    </tbody> 
+    
+</table> 
