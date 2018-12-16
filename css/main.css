@@ -36,13 +36,3 @@ body
 	background-color: #f44336;
 	color: white;
 }
-
-.home-div {
-    position: relative;
-}
-
-.home-div span {
-   position: absolute;
-   bottom: 0;
-   right: 0;
-}
