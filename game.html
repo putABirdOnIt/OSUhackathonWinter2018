@@ -41,8 +41,8 @@
 <li><a href="main.html">Home</a></li>
 <li><a href="database.html">Database</a></li>
 <li><a href="contact.html">Contact</a></li>
-<li><a href="contact.html">Console</a></li>
-<li><a href="contact.html">Genre</a></li>
+<li><a href="console.html">Console</a></li>
+<li><a href="genre.html">Genre</a></li>
 
 </ul>
 </div>
@@ -58,8 +58,9 @@
   <ul>
     <li><a href="database.html">Gyms</a></li>
       <ul>
-        <li><a href="">Legend of Zelda</a></li>
-        <li><a href="">Zelda II</a></li>
+        <li><a href="">Legend of Zelda, NES, Adventure, 1986</a></li>
+        <li><a href="">Zelda II: The Adventure of Link, NES, RPG, 1987</a></li>
+        <li><a href="">The Legend of Zelda: A Link to the Past, SNES, Adventure, 1991</a></li>
 		
 		
       </ul>
@@ -91,50 +92,6 @@
 </form>
 <br>
 
-<h2>Update {{game.game_name}} {{game.year_debut}} 
-{{game.console}} {{game.genre}}:</h2>
-<form id="update-game" action="/game" method="post">
-    Game Name: <input type="text" name="game_name" value="{{game.game_name}}"><br>
-    Console: <input type="text" name="console" value="{{game.console}}"><br>
-    Genre: <input type="text" name="genre" value="{{game.gym_genre}}"><br>
-    Year Game Came Out: <input type="int" name="year_debut" value="{{game.year_debut}}"><br>
-</form>
-<button onclick="updateGame({{game.game_id}})">Update</button>
-
-<h2>Classic Games</h2>
-<table id="GameTable">
-	<thead>
-		<tr>
-			<th>Game Name</th>
-			<th>Console</th>
-			<th>Genre</th>
-			<th>Release Year</th>
-			
-									
-		</tr>
-	</thead>
-	<tbody id="tbody">
-		
-				<tr>
-					<td>{{?}}</td>
-					<td>{{?}}</td>
-					<td>{{?}}</td>
-					<td>{{?}}</td>
-					<td>{{?}}</td>					
-					
-					<td>
-						<input type="button" name="deletebutton" id="deletebutton" value="Delete" onClick="deletebutton(?)">
-					</td>
-				</tr>
-			
-	</tbody>
-</table>
-
-	 	  <li><a href="HomePage.html">Home</a></li>
-    <li><a href="console.html">Console</a></li>
-    <li><a href="genre.html">Genre</a></li>
-    <li><a href="year.html">Year Came Out</a></li>
-  </ul>
   
 </nav>
 
