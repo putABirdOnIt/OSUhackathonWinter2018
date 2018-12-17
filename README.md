@@ -40,6 +40,7 @@ The developers welcome any and all future contributions to this project. Specifi
 VI. Credits
 
 The following developers worked on Capsule Console:
+
 Stephanie Flower: 
 - email: flowers@oregonstate.edu
 
