@@ -29,12 +29,18 @@ $(document).ready(function () {
         }
     }
     
-    var result = results[Math.floor(Math.random() * (results.length - 1) + 1)]; //randomly pick a result from our array of queries that meet the user criteria
-    var imageString = '<img id="image" style="width:60px;height:70px" src="' + result.sample_cover.image + '"/>';
+    if (results.length == 0) //no results
+    {
+        window.alert('Your query did not return any data. No such results for year ' + year + ' and specified platform/genre.');
+    }
+    else
+    {
+        var result = results[Math.floor(Math.random() * (results.length - 1) + 1)]; //randomly pick a result from our array of queries that meet the user criteria
+        var imageString = '<img id="image" style="width:60px;height:70px" src="' + result.sample_cover.image + '"/>';
 
 
-    $('#gameTitleHere').text(result.title); //append text to a div
-    $('#gameImageHere').prepend(imageString); //append picture to a div
-
+        $('#gameTitleHere').text(result.title); //append text to a div
+        $('#gameImageHere').prepend(imageString); //append picture to a div
+    }
 
     });
