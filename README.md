@@ -53,7 +53,6 @@ Calista Wong:
 
 Charles "Charlie" Ylijoki:
 - email: ylijokic@oregonstate.edu
-- LinkedIn: 
 
 VII. License
 
