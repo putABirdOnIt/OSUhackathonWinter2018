@@ -43,6 +43,7 @@ The following developers worked on Capsule Console:
 
 Sarah Flower: 
 - email: flowers@oregonstate.edu
+- Linkedin: https://www.linkedin.com/in/sarahflower/
 
 Kenneth "Kenny" Matuszewski: 
 - email: matuszek@oregonstate.edu
