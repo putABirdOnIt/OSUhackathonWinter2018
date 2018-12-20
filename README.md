@@ -41,7 +41,7 @@ VI. Credits
 
 The following developers worked on Capsule Console:
 
-Stephanie Flower: 
+Sarah Flower: 
 - email: flowers@oregonstate.edu
 
 Kenneth "Kenny" Matuszewski: 
